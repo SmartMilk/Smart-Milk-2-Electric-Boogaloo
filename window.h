@@ -25,18 +25,17 @@ public:
 
 	// internal variables for the window class
 	private slots:
-	void setDegC();  //Set the temperature to degrees C
-	void setDegF();  //Set the temperature to degrees F
-	void countdown(): //Countdown to Prowl Message send
+//	void setDegC();  //Set the temperature to degrees C
+//	void setDegF();  //Set the temperature to degrees F
+	//void countdown(): //Countdown to Prowl Message send
 
 
 private:
 	//These functions are for creating all the components in the GUI. The components are divided by groups(Qt Groups)
 
 	void createTempScale();  //This function creates celsius and farenheit push button GUIs
-	void createCountdownBox();  //Creates a GUI slot for a countdown timer for sending Prowl Messages      
+	void createCountdownBox();  //Creates a GUI slot for a countdown timer for sending Prowl Messages
 	void createTempCountdownVertSplit();   //Function splits the tempscale and countdown boxes vertically
-												 
 	//Declaring pointers
 
 	QwtThermo    *thermo;
